@@ -10,6 +10,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
 import model.Mark;
+import model.MarkAverage;
 import model.User;
 
 public class Hibernate {
@@ -160,7 +161,7 @@ public class Hibernate {
 
 	private void addMarkAverage(User user) {
 		// we generate a new Mark element to assign to the User markAverage field.
-		Mark markAverage = new Mark(3, "I");
+		MarkAverage markAverage = new MarkAverage(3, "I");
 
 		// we add this element to the user
 		user.setMarkAverage(markAverage);
