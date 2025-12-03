@@ -38,7 +38,7 @@ public class User {
 	
 	@OneToOne //This specifies that has an aggregation of another class (table)
 	@JoinColumn(name = "mark_average")
-	private Mark markAverage;
+	private MarkAverage markAverage;
 	
 	//Empty constructor is needed
 	public User(){} 
@@ -54,7 +54,7 @@ public class User {
 		this.surname = surname;
 	}
 
-	public void setMarkAverage(Mark markAverage) {
+	public void setMarkAverage(MarkAverage markAverage) {
 		this.markAverage = markAverage;
 	}
 	
@@ -62,7 +62,7 @@ public class User {
 		return this.marks;
 	}
 	
-	public Mark getMarkAverage() {
+	public MarkAverage getMarkAverage() {
 		return this.markAverage;
 	}
 
